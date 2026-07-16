@@ -1,0 +1,216 @@
+/* --- Global Reset & Variables --- */
+:root {
+    --bg-color: #ffffff;
+    --bg-light: #f8f9fa;
+    --text-main: #1a1a1a;
+    --text-muted: #666666;
+    --accent: #0071e3; /* Modern Royal/Apple Blue */
+    --accent-hover: #005bb5;
+    --border-color: #e5e5e7;
+    --font-stack: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: var(--font-stack);
+    color: var(--text-main);
+    background-color: var(--bg-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+.section {
+    padding: 6rem 0;
+}
+
+.section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+/* --- Bootstrap Navbar Customizations --- */
+.custom-navbar {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.custom-navbar .nav-link {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.custom-navbar .nav-link:hover, 
+.custom-navbar .nav-link:focus {
+    color: var(--text-main);
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)), url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+    color: #ffffff;
+    padding-top: 80px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.btn-custom {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    padding: 0.85rem 2rem;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    transition: var(--transition);
+}
+
+.btn-custom:hover {
+    background-color: var(--accent);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* --- Cards Custom Styling --- */
+.custom-card {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    transition: var(--transition);
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+.custom-card .card-img {
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+}
+
+.featured-card {
+    border: 1.5px solid var(--accent) !important;
+}
+
+.tracking-wider {
+    letter-spacing: 0.06em;
+}
+
+/* --- Filter & Gallery Styling --- */
+.filter-btn {
+    background: none;
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1.25rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: var(--text-main);
+    color: var(--bg-color);
+    border-color: var(--text-main);
+}
+
+/* Updated wrapper forces uniform square cells */
+.gallery-img-wrapper {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Ensures perfect squares across all screens */
+}
+
+/* Updated image styling targets smooth, natural rendering without distortion */
+.gallery-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;            /* Clips image to box size without any stretching */
+    object-position: center;      /* Centers the crop focal point */
+    image-rendering: auto;        /* Smooth anti-aliased scaling for JPEGs */
+    transform: translateZ(0);     /* Enlists GPU for lag-free, crisp scaling */
+    transition: var(--transition);
+}
+
+.gallery-img-wrapper:hover img {
+    transform: scale(1.03) translateZ(0); /* Subtle hover zoom */
+}
+
+.gallery-item.hide {
+    display: none;
+}
+
+/* --- Certifications --- */
+.cert-item {
+    border-color: var(--border-color) !important;
+    transition: var(--transition);
+}
+
+.cert-item:hover {
+    border-color: var(--text-main) !important;
+}
+
+.cert-icon {
+    font-size: 2rem;
+    background: var(--bg-light);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+/* --- Blog Cards --- */
+.blog-card {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.blog-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px rgba(0, 113, 227, 0.04);
+}
+
+.read-more {
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 0.95rem;
+}
+
+/* --- Modal Overrides --- */
+.modal-content {
+    border-radius: 16px;
+    border: none;
+}
+
+.lead-text p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
