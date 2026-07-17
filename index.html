@@ -17,19 +17,20 @@
 <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
         <div class="container">
-            <a class="navbar-brand logo" href="#">ROAM<span>.</span></a>
+            <a class="navbar-brand logo" href="#">TRAVEL<span>.</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
                 <ul class="navbar-nav gap-lg-4 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
                     <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li> -->
                     <!-- Trip Inquiry Button -->
                     <li class="nav-item ms-lg-2">
-                        <a class="btn btn-primary inquiry-btn" href="https://journeyfuse.com/form/atlas-6ea0f8" target="_blank" rel="noopener">Trip Inquiry</a>
+                        <a class="btn btn-primary inquiry-btn" href="#inquiry">Trip Inquiry</a>
                     </li>
                 </ul>
             </div>
@@ -46,7 +47,28 @@
             </div>
         </div>
     </header>
-
+    <!-- About Me Section -->
+    <section id="about" class="section border-bottom">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <!-- Profile Image -->
+                <div class="col-12 col-md-5">
+                    <div class="position-relative">
+                        <!-- Replace with a professional headshot or a high-quality travel photo of yourself -->
+                        <img src="images/best-graduationpic.jpeg" alt="Your Name" class="img-fluid rounded-4 shadow-sm">
+                    </div>
+                </div>
+                <!-- Bio Content -->
+                <div class="col-12 col-md-7">
+                    <span class="text-primary fw-semibold text-uppercase tracking-wider d-block mb-2">The Face Behind It All</span>
+                    <h2 class="section-title text-start mb-4">Hey there, I'm Austin Baines</h2>
+                    <p class="lead text-muted mb-3">I'm a data-driven travel strategist and certified advisor dedicated to turning complex itineraries into seamless, unforgettable escapes.</p>
+                    <p class="text-muted mb-4">Whether I'm calculating the perfect cruise routing or scouting out top-tier tropical resorts, my goal is to blend meticulously analyzed logistics with true luxury comfort. When you design a trip with me, you aren't just getting an itinerary—you are gaining a dedicated human advocate who handles the stress so you can focus entirely on the journey.</p>
+                    <a href="#experiences" class="btn btn-outline-dark fw-semibold px-4 py-2" style="border-radius: 6px;">Explore My Specialties</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Travel Agency Services/Experiences Section -->
     <section id="experiences" class="section">
         <div class="container">
@@ -97,6 +119,7 @@
     <section id="gallery" class="section bg-light">
         <div class="container">
             <h2 class="section-title text-start mb-4">Visual Chronicles</h2>
+            <p class="lead text-muted mb-4">All of the photos in this gallery were taken by me on the various trips I have gone on.</p>
             <div class="gallery-filters mb-4 d-flex gap-2 flex-wrap">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="cruise ships">Cruise Ships</button>
@@ -104,6 +127,7 @@
                 <button class="filter-btn" data-filter="alaska">Alaska</button>
                 <button class="filter-btn" data-filter="paris">Paris</button>
                 <button class="filter-btn" data-filter="usa">USA</button>
+                <button class="filter-btn" data-filter="hawaii">Hawaii</button>
             </div>
             <div class="row g-4 gallery-grid">
                 <!-- 1. Allure of the Seas Ship (Cruise) -->
@@ -115,6 +139,11 @@
                 <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="cruise ships">
                     <div class="gallery-img-wrapper">
                         <img src="images/CruiseShips/Oasis_1.webp" alt="Oasis of the Seas Ship" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="cruise ships">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/CruiseShips/Utopia_1.webp" alt="Utopia of the Seas Ship" class="gallery-img">
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="cruise ships">
@@ -171,15 +200,120 @@
                     <div class="gallery-img-wrapper">
                         <img src="images/Caribbean/Mexico_3.webp" alt="Mexico" class="gallery-img">
                     </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="caribbean">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/Caribbean/Bahamas_1.webp" alt="Bahamas" class="gallery-img">
+                    </div>
+                </div> 
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="caribbean">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/Caribbean/PUNTA_CANA_1.webp" alt="Bahamas" class="gallery-img">
+                    </div>
+                </div> 
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="caribbean">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/Caribbean/PUNTA_CANA_2.webp" alt="Bahamas" class="gallery-img">
+                    </div>
                 </div> 
                 <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="alaska">
                     <div class="gallery-img-wrapper">
                         <img src="images/Alaska/Alaska_1.webp" alt="Alaska" class="gallery-img">
                     </div>
                 </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="alaska">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/Alaska/Alaska_2.webp" alt="Alaska" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="alaska">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/Alaska/Alaska_3.webp" alt="Alaska" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="alaska">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/Alaska/Alaska_4.webp" alt="Alaska" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="alaska">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/Alaska/Alaska_5.webp" alt="Alaska" class="gallery-img">
+                    </div>
+                </div>
                 <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="paris">
                     <div class="gallery-img-wrapper">
                         <img src="images/Paris/Paris_1.webp" alt="Paris" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="paris">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/Paris/Paris_2.webp" alt="Paris" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="paris">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/Paris/Paris_3.webp" alt="Paris" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="paris">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/Paris/Paris_4.webp" alt="Paris" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="usa">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/USA/NEWYORK_1.webp" alt="New York" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="usa">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/USA/LA_1.webp" alt="Los Angeles" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="usa">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/USA/Griffith1Edit.webp" alt="Los Angeles" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="usa">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/USA/Vegas_1.webp" alt="Las Vegas" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="hawaii">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/Hawaii/KAUAI_1.webp" alt="Hawaii" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="hawaii">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/Hawaii/KAUAI_2.webp" alt="Hawaii" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="hawaii">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/Hawaii/KAUAI_3.webp" alt="Hawaii" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="hawaii">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/Hawaii/KAUAI_4.webp" alt="Hawaii" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="hawaii">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/Hawaii/KAUAI_5.webp" alt="Hawaii" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="hawaii">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/Hawaii/MAUI_1.webp" alt="Hawaii" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 gallery-item" data-category="hawaii">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/Hawaii/OAHU_1.webp" alt="Hawaii" class="gallery-img">
                     </div>
                 </div>
             </div>
@@ -196,17 +330,17 @@
                 <div class="col-12 col-lg-8">
                     <div class="d-flex flex-column gap-3">
                         <div class="cert-item d-flex align-items-center p-3 border rounded">
-                            <div class="cert-icon me-3">✈️</div>
+                            <div class="cert-icon me-3">🛳️</div>
                             <div class="cert-details">
                                 <h3 class="h5 mb-1"> ROYAL CARIBBEAN </h3>
-                                <p class="mb-0 text-muted small"> LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. </p>
+                                <p class="mb-0 text-muted small"> MASTER OF ADVENTURE </p>
                             </div>
                         </div>
                         <div class="cert-item d-flex align-items-center p-3 border rounded">
                             <div class="cert-icon me-3">🏝️</div>
                             <div class="cert-details">
-                                <h3 class="h5 mb-1"> TRAVEL LEADERS NETWORK </h3>
-                                <p class="mb-0 text-muted small">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. </p>
+                                <h3 class="h5 mb-1"> ATLAS TRAVEL GROUP </h3>
+                                <p class="mb-0 text-muted small"> TRAVEL ADVISOR </p>
                             </div>
                         </div>
                     </div>
@@ -214,39 +348,56 @@
             </div>
         </div>
     </section>
-
-    <!-- Blog Section -->
+    <!-- COMMENTING BLOG SECTION OUT FOR NOW WILL COME BACK TO IT LATER -->
+    <!--  Blog Section
     <section id="blog" class="section bg-light">
         <div class="container">
             <h2 class="section-title text-start mb-5">The Travel Log</h2>
             <div class="row g-4">
                 <div class="col-12 col-md-6">
-                    <article class="blog-card p-4 rounded h-100 d-flex flex-column justify-content-between" data-post-id="1">
+                    <article class="blog-card p-4 rounded h-100 d-flex flex-column justify-content-between"
+                        data-post-id="1">
                         <div>
                             <div class="blog-date text-muted mb-2">July 15, 2026</div>
                             <h3 class="h4 mb-3">Why Working with a Travel Advisor Beats Online Booking Platforms</h3>
-                            <p class="text-muted">In the age of endless search tabs, outsourcing complex logistics ensures premium service, exclusive upgrades, and direct peace of mind...</p>
+                            <p class="text-muted">In the age of endless search tabs, outsourcing complex logistics ensures
+                                premium service, exclusive upgrades, and direct peace of mind...</p>
                         </div>
                         <span class="read-more mt-3">Read Entry →</span>
                     </article>
                 </div>
                 <div class="col-12 col-md-6">
-                    <article class="blog-card p-4 rounded h-100 d-flex flex-column justify-content-between" data-post-id="2">
+                    <article class="blog-card p-4 rounded h-100 d-flex flex-column justify-content-between"
+                        data-post-id="2">
                         <div>
                             <div class="blog-date text-muted mb-2">June 28, 2026</div>
                             <h3 class="h4 mb-3">Mastering the Stress-Free Multi-Stop European Itinerary</h3>
-                            <p class="text-muted">A deep dive into prioritizing base locations and clean layout routing to design actual relaxing vacations instead of constant packing runs...</p>
+                            <p class="text-muted">A deep dive into prioritizing base locations and clean layout routing to
+                                design actual relaxing vacations instead of constant packing runs...</p>
                         </div>
                         <span class="read-more mt-3">Read Entry →</span>
                     </article>
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <!-- Call to Action (CTA) Section -->
+    <section id="inquiry" class="cta-section text-center py-5">
+        <div class="container">
+            <div class="cta-content mx-auto p-5 rounded-4 shadow-sm">
+                <h2 class="fw-bold mb-3">Ready to Book?</h2>
+                <p class="lead text-muted mb-4">Let's craft your next perfect getaway. Tell me a little about your travel style, and I'll handle the rest.</p>
+                <a href="https://journeyfuse.com/form/atlas-6ea0f8" target="_blank" rel="noopener" class="btn btn-primary cta-btn px-4 py-2 fw-semibold">
+                    Fill Out My Interest Form
+                </a>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer py-5 border-top text-center text-muted">
-        <p class="mb-0">&copy; 2026 ROAM Portfolio. Built sleek and functional.</p>
+        <p class="mb-0">&copy; 2026 Travel with AB Portfolio. Built sleek and functional.</p>
     </footer>
 
     <!-- Bootstrap 5 Native Modal for Blog Reading -->
